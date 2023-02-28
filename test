@@ -1,0 +1,29 @@
+import os
+import datetime
+
+directory = 'truework'
+
+def createToFile(w,directorfpath,):
+    file_obj = open("truework.md" + "-" + w,"w")
+    file_obj.write("---")
+    file_obj.write("weight: " + w + "\n" + "images: " + fpath + "\n" + "title: " + directory + " " w)
+    file_obj.write("date: " + str(datetime.today()))
+    file_obj.write("tags:" + "\n" + "- " + directory
+
+def importImages(w):
+    for filename in os.scandir(directory):
+        if filename.is_file():
+            print(filename.path)
+            createToFile(w,filename.path)
+    
+#tags:
+#- archive # all posts
+#- nature
+#---
+
+
+
+
+
+
+
