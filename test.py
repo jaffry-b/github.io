@@ -9,7 +9,7 @@ root_directory= os.getcwd()
 directory = './assets/images/Japan'
 
 weight= 0
-
+####
 
 def createToFile(w,fpath,title):
     file_obj = open("truework" + "-" + w + ".md","w")
